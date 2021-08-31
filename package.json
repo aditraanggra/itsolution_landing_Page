@@ -8,11 +8,20 @@
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^10.3.3",
+    "gulp-cli": "^2.3.0",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.2.9"
   },
   "scripts": {
-    "buildcss": "postcss src/tailwind.css -o src/css/main.css"
+    "dev": "gulp",
+    "build": "NODE_ENV=production gulp css",
+    "build-images": "gulp images"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-postcss": "^9.0.1"
   }
 }
