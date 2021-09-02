@@ -1,4 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @tailwind base;
+
 @tailwind components;
 
 .gradient-text {
@@ -15,8 +20,20 @@
 
 @tailwind utilities;
 
+.card-hover:hover {
+  @apply transition duration-500 ease-in transform scale-100 shadow-xl;
+}
+
+.card-hover:hover .icon-hover {
+  @apply transition duration-500 ease-in text-blue-800;
+}
+
+.move-hover:hover {
+  @apply transition duration-300 text-blue-800;
+}
+
 .move-hover:hover .fas {
-  @apply transition duration-500 ease-in-out transform translate-x-3;
+  @apply transition duration-300 ease-in-out transform translate-x-3;
 }
 
 .nav-item:hover {

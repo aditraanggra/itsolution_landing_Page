@@ -20,26 +20,28 @@
       id="header"
       class="
         md:px-32 md:py-5
-        px-20
+        px-10
         bg-white bg-opacity-40
         w-full
         h-24
         flex
+        md:flex-row
+        flex-col
         justify-between
         items-center
         mb-16
       "
     >
-      <div class="flex flex-1">
+      <div class="flex flex-1 md:mt-0 mt-5 md:mb-0 mb-5">
         <a href="#header">
-          <img src="./assets/img/logo.png" alt="logo" class="md:w-32 w-24" />
+          <img src="./assets/img/logo.png" alt="logo" class="w-32" />
         </a>
       </div>
       <nav class="flex flex-row">
         <ul class="flex flex-row items-center gap-8">
           <li>
             <button class="cta-button">
-              <a href="#"> Get Quote </a>
+              <a href="#contact"> Get Quote </a>
             </button>
           </li>
         </ul>
@@ -48,10 +50,18 @@
     <!-- End Header -->
 
     <!-- Hero -->
-    <section id="hero" class="flex justify-center">
-      <div class="container flex md:flex-row flex-col-reverse px-20">
+    <section id="hero" class="flex justify-center mb-20">
+      <div class="container flex md:flex-row flex-col-reverse md:px-20 px-10">
         <div class="flex flex-col flex-1 md:w-5/12 w-full">
-          <h1 class="text-blue-900 font-sans font-bold text-6xl capitalize">
+          <h1
+            class="
+              text-blue-900
+              font-sans font-bold
+              md:text-6xl
+              text-4xl
+              capitalize
+            "
+          >
             we run all kind of <span class="gradient-text">IT services</span
             ><br />
             that vow your <span class="gradient-text">success</span>
@@ -59,18 +69,334 @@
           <p class="text-xl text-gray-500 mt-6">
             Highly Tailored IT Design, Management & Support Services.
           </p>
-          <a href="#" class="nav-item mt-7 move-hover"
-            >Explore Solutions <i class="fas fa-arrow-right"></i
-          ></a>
+          <div class="mt-7">
+            <a
+              href="#services"
+              class="text-blue-500 text-base font-bold mt-7 move-hover"
+              >Explore Solutions <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
         </div>
-        <div class="md:w-7/12 w-full flex justify-end items-center">
+        <div
+          class="md:w-7/12 w-full flex justify-end items-center md:my-0 my-10"
+        >
           <img src="./assets/img/hero-img.png" alt="hero-image" />
         </div>
       </div>
     </section>
     <!-- End Hero -->
 
+    <!-- Client Section -->
+    <section class="flex justify-center py-10 mb-10">
+      <div
+        class="
+          container
+          flex
+          md:flex-row
+          flex-col
+          md:px-20
+          px-10
+          justify-around
+          items-center
+          md:space-y-0
+          space-y-5
+        "
+      >
+        <div class="p-5 flex justify-center items-center filter grayscale">
+          <img
+            src="./assets/img/client/client_1.png"
+            style="width: 130px"
+            alt="client"
+          />
+        </div>
+        <div class="p-5 flex justify-center items-center filter grayscale">
+          <img
+            src="./assets/img/client/client_2.png"
+            style="width: 130px"
+            alt="client"
+          />
+        </div>
+        <div class="p-5 flex justify-center items-center filter grayscale">
+          <img
+            src="./assets/img/client/client_3.png"
+            style="width: 130px"
+            alt="client"
+          />
+        </div>
+        <div class="p-5 flex justify-center items-center filter grayscale">
+          <img
+            src="./assets/img/client/client_4.png"
+            style="width: 130px"
+            alt="client"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- End -->
+
+    <!-- Services Section -->
+    <section
+      id="services"
+      class="bg-gray-100 justify-center py-20 flex flex-col items-center"
+    >
+      <h5
+        class="
+          text-base
+          uppercase
+          mb-4
+          tracking-wider
+          font-medium
+          text-gray-500
+        "
+      >
+        our services
+      </h5>
+      <h2 class="text-3xl font-bold text-center text-blue-900 capitalize">
+        We Provide The Best Quality IT Solution
+      </h2>
+      <div
+        class="
+          container
+          grid
+          md:grid-cols-3
+          grid-rows-1
+          gap-6
+          md:px-20
+          px-7
+          py-14
+        "
+      >
+        <div
+          class="card-hover flex flex-col items-center py-8 bg-white rounded"
+        >
+          <div>
+            <img
+              class="icon-hover w-20"
+              src="./assets/img/svg/003-server.svg"
+              alt="image"
+            />
+          </div>
+          <div class="w-3/4 text-center mt-6">
+            <h4 class="text-xl font-bold text-blue-900 capitalize">
+              Server Infrastructure
+            </h4>
+            <p class="text-xm font-normal lowercase mt-2 text-gray-400">
+              It’s possible to simultaneously manage and transform information
+              from one server to another.
+            </p>
+          </div>
+        </div>
+        <!-- card 1 -->
+        <div
+          class="card-hover flex flex-col items-center py-8 bg-white rounded"
+        >
+          <div>
+            <img
+              class="icon-hover w-20"
+              src="./assets/img/svg/004-casino-cctv.svg"
+              alt="image"
+            />
+          </div>
+          <div class="w-3/4 text-center mt-6">
+            <h4 class="text-xl font-bold text-blue-900 capitalize">
+              CCTV Installations
+            </h4>
+            <p class="text-xm font-normal lowercase mt-2 text-gray-400">
+              It’s possible to simultaneously manage and transform information
+              from one server to another.
+            </p>
+          </div>
+        </div>
+        <!-- card 1 -->
+        <div
+          class="card-hover flex flex-col items-center py-8 bg-white rounded"
+        >
+          <div>
+            <img
+              class="icon-hover w-20"
+              src="./assets/img/svg/002-wifi-signal.svg"
+              alt="image"
+            />
+          </div>
+          <div class="w-3/4 text-center mt-6">
+            <h4 class="text-xl font-bold text-blue-900 capitalize">
+              Wifi Installations
+            </h4>
+            <p class="text-xm font-normal lowercase mt-2 text-gray-400">
+              It’s possible to simultaneously manage and transform information
+              from one server to another.
+            </p>
+          </div>
+        </div>
+        <!-- card 1 -->
+        <div
+          class="card-hover flex flex-col items-center py-8 bg-white rounded"
+        >
+          <div>
+            <img
+              class="icon-hover w-20"
+              src="./assets/img/svg/006-data.svg"
+              alt="image"
+            />
+          </div>
+          <div class="w-3/4 text-center mt-6">
+            <h4 class="text-xl font-bold text-blue-900 capitalize">
+              Web Application
+            </h4>
+            <p class="text-xm font-normal lowercase mt-2 text-gray-400">
+              It’s possible to simultaneously manage and transform information
+              from one server to another.
+            </p>
+          </div>
+        </div>
+        <!-- card 1 -->
+        <div
+          class="card-hover flex flex-col items-center py-8 bg-white rounded"
+        >
+          <div>
+            <img
+              class="icon-hover w-20"
+              src="./assets/img/svg/005-coding.svg"
+              alt="image"
+            />
+          </div>
+          <div class="w-3/4 text-center mt-6">
+            <h4 class="text-xl font-bold text-blue-900 capitalize">
+              Mobile App
+            </h4>
+            <p class="text-xm font-normal lowercase mt-2 text-gray-400">
+              It’s possible to simultaneously manage and transform information
+              from one server to another.
+            </p>
+          </div>
+        </div>
+        <!-- card 1 -->
+        <div
+          class="card-hover flex flex-col items-center py-8 bg-white rounded"
+        >
+          <div>
+            <img
+              class="icon-hover w-20"
+              src="./assets/img/svg/001-web-design.svg"
+              alt="image"
+            />
+          </div>
+          <div class="w-3/4 text-center mt-6">
+            <h4 class="text-xl font-bold text-blue-900 capitalize">
+              Website Design
+            </h4>
+            <p class="text-xm font-normal lowercase mt-2 text-gray-400">
+              It’s possible to simultaneously manage and transform information
+              from one server to another.
+            </p>
+          </div>
+        </div>
+        <!-- card 1 -->
+      </div>
+    </section>
+    <!-- End -->
+
+    <!-- Contact -->
+    <section id="contact" class="py-20">
+      <div class="flex flex-row justify-between items-center md:px-20 px-10">
+        <div class="flex flex-col w-1/2">
+          <div class="border-l-8 border-blue-900 px-10">
+            <h2 class="text-4xl font-semibold text-blue-900 capitalize mb-6">
+              Obtaining further information by make a contact with our
+              experienced IT staffs.
+            </h2>
+            <p class="text-lg text-gray-400">We're available 8 hours a day</p>
+          </div>
+        </div>
+        <div class="flex flex-col w-1/2 px-10">
+          <h2 class="text-2xl font-semibold capitalize text-blue-900 mb-6">
+            Contact Us
+          </h2>
+          <label class="text-lg text-gray-500 mb-2 ml-4" for="name"
+            >Full Name</label
+          >
+          <input
+            type="text"
+            name="full name"
+            id="name"
+            placeholder="Your Full Name"
+            class="
+              bg-gray-100
+              h-16
+              text-gray-800 text-lg
+              py-4
+              px-6
+              rounded-xl
+              mb-4
+            "
+          />
+          <label class="text-lg text-gray-500 mb-2 ml-4" for="email"
+            >Email</label
+          >
+          <input
+            type="text"
+            name="full name"
+            id="email"
+            placeholder="Your Email"
+            class="
+              bg-gray-100
+              h-16
+              text-gray-800 text-lg
+              py-4
+              px-6
+              rounded-xl
+              mb-4
+            "
+          />
+          <label class="text-lg text-gray-500 mb-2 ml-4" for="name"
+            >Your Massage</label
+          >
+          <textarea
+            name="body"
+            id=""
+            cols="30"
+            rows="10"
+            class="
+              bg-gray-100
+              h-24
+              text-gray-800 text-lg
+              py-4
+              px-6
+              rounded-xl
+              mb-8
+            "
+          ></textarea>
+          <button class="cta-button">
+            <a href="#"> Send Massage </a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End -->
+
     <!-- Footer -->
+    <section id="footer" class="py-8 md:px-20 px-10 items-center">
+      <div
+        class="
+          container
+          flex
+          md:flex-row
+          flex-col
+          justify-between
+          items-center
+          border-t border-gray-300
+          py-6
+          px-8
+        "
+      >
+        <div>
+          <img src="./assets/img/logo.png" alt="logo" class="md:w-32 w-24" />
+        </div>
+        <div>
+          <p></p>
+        </div>
+      </div>
+    </section>
     <!-- End Footer -->
   </body>
 </html>
