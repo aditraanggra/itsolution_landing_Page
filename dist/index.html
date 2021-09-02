@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/tailwind.css" />
+    <link rel="stylesheet" href="./assets/vendor/fontawesome/css/all.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/tailwind.css" />
     <title>IT Solutions</title>
   </head>
   <body>
@@ -31,12 +32,11 @@
     >
       <div class="flex flex-1">
         <a href="#header">
-          <img src="./assets/logo.png" alt="logo" class="md:w-32 w-24" />
+          <img src="./assets/img/logo.png" alt="logo" class="md:w-32 w-24" />
         </a>
       </div>
       <nav class="flex flex-row">
         <ul class="flex flex-row items-center gap-8">
-          <li><a href="#" class="nav-item">Explore Solutions</a></li>
           <li>
             <button class="cta-button">
               <a href="#"> Get Quote </a>
@@ -49,8 +49,8 @@
 
     <!-- Hero -->
     <section id="hero" class="flex justify-center">
-      <div class="container flex flex-row px-20">
-        <div class="flex flex-col flex-1 w-1/2">
+      <div class="container flex md:flex-row flex-col-reverse px-20">
+        <div class="flex flex-col flex-1 md:w-5/12 w-full">
           <h1 class="text-blue-900 font-sans font-bold text-6xl capitalize">
             we run all kind of <span class="gradient-text">IT services</span
             ><br />
@@ -59,8 +59,13 @@
           <p class="text-xl text-gray-500 mt-6">
             Highly Tailored IT Design, Management & Support Services.
           </p>
+          <a href="#" class="nav-item mt-7 move-hover"
+            >Explore Solutions <i class="fas fa-arrow-right"></i
+          ></a>
         </div>
-        <div class="w-1/2"></div>
+        <div class="md:w-7/12 w-full flex justify-end items-center">
+          <img src="./assets/img/hero-img.png" alt="hero-image" />
+        </div>
       </div>
     </section>
     <!-- End Hero -->

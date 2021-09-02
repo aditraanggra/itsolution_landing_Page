@@ -1,5 +1,4 @@
 const { src, watch, dest, task, parallel, series } = require('gulp')
-const fileinclude = require('gulp-file-include')
 const browserSync = require('browser-sync')
 const postcss = require('gulp-postcss')
 // const imagemin = require('gulp-imagemin')

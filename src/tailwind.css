@@ -15,6 +15,10 @@
 
 @tailwind utilities;
 
+.move-hover:hover .fas {
+  @apply transition duration-500 ease-in-out transform translate-x-3;
+}
+
 .nav-item:hover {
   @apply text-blue-700 transition-colors duration-500;
 }
