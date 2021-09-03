@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
     <link rel="stylesheet" href="./css/tailwind.css" />
     <title>IT Solutions</title>
   </head>
@@ -25,40 +31,29 @@
         w-full
         md:h-24
         h-auto
-        py-8
+        py-2
         flex
         md:flex-row
         flex-col
         justify-between
         items-center
-        mb-16
-        fixed
-        top-0
-        z-10
+        md:mb-12
+        mb-5
       "
     >
       <div class="flex flex-1 md:mt-0 mt-5 md:mb-0 mb-5">
-        <a href="#header">
+        <a href="https://adsmediamix.id/" target="_blank">
           <img src="./assets/img/logo-ads.png" alt="logo" class="h-14" />
         </a>
-        <a href="#header" class="ml-2">
+        <a href="https://komunikamedia.co.id/" target="_blank" class="ml-2">
           <img src="./assets/img/logo.png" alt="logo" class="h-14" />
         </a>
       </div>
-      <nav class="flex flex-row">
-        <ul class="flex flex-row items-center gap-8">
-          <li>
-            <button class="cta-button">
-              <a href="#contact" class="text-lg"> Get Quote </a>
-            </button>
-          </li>
-        </ul>
-      </nav>
     </header>
     <!-- End Header -->
 
     <!-- Hero -->
-    <section id="hero" class="flex justify-center mb-20 md:mt-44 mt-48">
+    <section id="hero" class="flex justify-center mb-20">
       <div class="container flex md:flex-row flex-col-reverse md:px-20 px-10">
         <div class="flex flex-col flex-1 md:w-5/12 w-full">
           <h1
@@ -95,16 +90,20 @@
     <!-- End Hero -->
 
     <!-- Client Section -->
-    <section class="flex justify-center py-10 mb-10">
+    <section class="flex flex-col justify-center items-center py-24 mb-10">
+      <h2 class="mb-10 text-3xl font-bold text-blue-900 capitalize text-center">
+        Our Client
+      </h2>
       <div
         class="
+          logo-slider
           container
           flex
           md:flex-row
           flex-col
           md:px-20
           px-10
-          justify-around
+          justify-between
           items-center
           md:space-y-0
           space-y-5
@@ -112,29 +111,57 @@
       >
         <div class="p-5 flex justify-center items-center filter grayscale">
           <img
-            src="./assets/img/client/client_1.png"
-            style="width: 130px"
+            class="m-auto md:w-auto md:h-14 h-10"
+            src="./assets/img/client/1_gojek.png"
             alt="client"
           />
         </div>
         <div class="p-5 flex justify-center items-center filter grayscale">
           <img
-            src="./assets/img/client/client_2.png"
-            style="width: 130px"
+            class="m-auto md:w-auto md:h-14 h-10"
+            src="./assets/img/client/2_pertamina.png"
             alt="client"
           />
         </div>
         <div class="p-5 flex justify-center items-center filter grayscale">
           <img
-            src="./assets/img/client/client_3.png"
-            style="width: 130px"
+            class="m-auto md:w-auto md:h-14 h-10"
+            src="./assets/img/client/3_Axiata.png"
             alt="client"
           />
         </div>
         <div class="p-5 flex justify-center items-center filter grayscale">
           <img
-            src="./assets/img/client/client_4.png"
-            style="width: 130px"
+            class="m-auto md:w-auto md:h-14 h-10"
+            src="./assets/img/client/4_telkomsel.png"
+            alt="client"
+          />
+        </div>
+        <div class="p-5 flex justify-center items-center filter grayscale">
+          <img
+            class="m-auto md:w-auto md:h-14 h-10"
+            src="./assets/img/client/9_oppo.png"
+            alt="client"
+          />
+        </div>
+        <div class="p-5 flex justify-center items-center filter grayscale">
+          <img
+            class="m-auto md:w-auto md:h-14 h-10"
+            src="./assets/img/client/10_maybank.png"
+            alt="client"
+          />
+        </div>
+        <div class="p-5 flex justify-center items-center filter grayscale">
+          <img
+            class="m-auto md:w-auto md:h-14 h-10"
+            src="./assets/img/client/11_bri.png"
+            alt="client"
+          />
+        </div>
+        <div class="p-5 flex justify-center items-center filter grayscale">
+          <img
+            class="m-auto md:w-auto md:h-14 h-10"
+            src="./assets/img/client/12_indofood.png"
             alt="client"
           />
         </div>
@@ -188,9 +215,10 @@
             <h4 class="text-xl font-bold text-blue-900 capitalize">
               Server Infrastructure
             </h4>
-            <p class="text-xm font-normal lowercase mt-2 text-gray-400">
-              It’s possible to simultaneously manage and transform information
-              from one server to another.
+            <p class="text-base font-normal mt-4 text-gray-400">
+              A set of specifications that created to define commonly used
+              server components and helps in developing common server hardware
+              which in turn simplifies building of server solutions.
             </p>
           </div>
         </div>
@@ -209,9 +237,10 @@
             <h4 class="text-xl font-bold text-blue-900 capitalize">
               CCTV Installations
             </h4>
-            <p class="text-xm font-normal lowercase mt-2 text-gray-400">
-              It’s possible to simultaneously manage and transform information
-              from one server to another.
+            <p class="text-xm font-normal mt-4 text-gray-400">
+              To reduce the risk of possible damage to the property, monitoring
+              system is one of the most effective ways of making home or
+              business premises feel safer and more secure.
             </p>
           </div>
         </div>
@@ -230,9 +259,10 @@
             <h4 class="text-xl font-bold text-blue-900 capitalize">
               Wifi Installations
             </h4>
-            <p class="text-xm font-normal lowercase mt-2 text-gray-400">
-              It’s possible to simultaneously manage and transform information
-              from one server to another.
+            <p class="text-xm font-normal mt-4 text-gray-400">
+              Creates what is called a Wireless Local Area Network (WLAN), that
+              allows all of the devices to connect to the internet without
+              cables.
             </p>
           </div>
         </div>
@@ -251,9 +281,10 @@
             <h4 class="text-xl font-bold text-blue-900 capitalize">
               Web Application
             </h4>
-            <p class="text-xm font-normal lowercase mt-2 text-gray-400">
-              It’s possible to simultaneously manage and transform information
-              from one server to another.
+            <p class="text-xm font-normal mt-4 text-gray-400">
+              An application software that runs on a web server and are accessed
+              by the user through a web browser with an active network
+              connection.
             </p>
           </div>
         </div>
@@ -272,9 +303,10 @@
             <h4 class="text-xl font-bold text-blue-900 capitalize">
               Mobile App
             </h4>
-            <p class="text-xm font-normal lowercase mt-2 text-gray-400">
-              It’s possible to simultaneously manage and transform information
-              from one server to another.
+            <p class="text-xm font-normal mt-4 text-gray-400">
+              A software program that is designed to run on specific hardware,
+              namely mobile handheld computing devices such as tablets and
+              smartphones.
             </p>
           </div>
         </div>
@@ -293,9 +325,10 @@
             <h4 class="text-xl font-bold text-blue-900 capitalize">
               Website Design
             </h4>
-            <p class="text-xm font-normal lowercase mt-2 text-gray-400">
-              It’s possible to simultaneously manage and transform information
-              from one server to another.
+            <p class="text-xm font-normal mt-4 text-gray-400">
+              Creating websites that reflect the company's brand and display
+              information to visitors, with creation of websites and pages to
+              ensure an effective and enjoyable user experience.
             </p>
           </div>
         </div>
@@ -332,7 +365,6 @@
               Obtaining further information by make a contact with our
               experienced IT staffs.
             </h2>
-            <p class="text-lg text-gray-400">We're available 8 hours a day</p>
           </div>
         </div>
         <div
@@ -374,7 +406,7 @@
             type="text"
             name="full name"
             id="email"
-            placeholder="Your Email"
+            placeholder="Ex. your@domain.com"
             class="
               bg-gray-100
               h-16
@@ -385,25 +417,51 @@
               mb-4
             "
           />
-          <label class="text-lg text-gray-500 mb-2 ml-4" for="name"
-            >Your Message</label
+          <label class="text-lg text-gray-500 mb-2 ml-4" for="phone"
+            >Phone Number</label
           >
-          <textarea
-            name="body"
-            id=""
-            cols="30"
-            rows="10"
+          <input
+            type="tel"
+            name="full name"
+            id="phone"
+            placeholder="Ex. 08123456890"
             class="
               bg-gray-100
-              h-24
+              h-16
               text-gray-800 text-lg
               py-4
               px-6
               rounded-xl
-              mb-8
+              mb-4
             "
-          ></textarea>
-          <button class="cta-button">
+          />
+          <label class="text-lg text-gray-500 mb-2 ml-4" for="category"
+            >Category</label
+          >
+          <select
+            name="category"
+            id="category"
+            class="
+              bg-gray-100
+              h-16
+              text-gray-800 text-lg
+              py-4
+              pl-6
+              pr-10
+              rounded-xl
+              mb-4
+            "
+          >
+            <option value="none" selected>-- Choose Category --</option>
+            <option value="server">Server Infrastructure</option>
+            <option value="cctv">CCTV Installation</option>
+            <option value="wifi">WIFI Installation</option>
+            <option value="web">Web Application</option>
+            <option value="mobile">Mobile App</option>
+            <option value="server infrastructure">Web Design</option>
+          </select>
+
+          <button class="cta-button mt-6">
             <a href="#" class="text-lg"> Send Message </a>
           </button>
         </div>
@@ -427,8 +485,12 @@
         "
       >
         <div class="flex flex-row">
-          <img src="./assets/img/logo-ads.png" alt="logo" class="h-12" />
-          <img src="./assets/img/logo.png" alt="logo" class="ml-4 h-12" />
+          <a href="https://adsmediamix.id/" target="_blank">
+            <img src="./assets/img/logo-ads.png" alt="logo" class="h-14" />
+          </a>
+          <a href="https://komunikamedia.co.id/" target="_blank" class="ml-2">
+            <img src="./assets/img/logo.png" alt="logo" class="h-14" />
+          </a>
         </div>
         <div>
           <p></p>
@@ -436,5 +498,32 @@
       </div>
     </section>
     <!-- End Footer -->
+    <!-- Scroll on Top -->
+    <button
+      onclick="topFunction()"
+      class="
+        h-12
+        w-12
+        rounded-full
+        bg-gradient-to-br
+        from-pink-700
+        to-yellow-500
+        text-white
+        float-right
+        fixed
+        right-8
+        bottom-10
+      "
+      id="myBtn"
+      title="Go to top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery-1.8.0.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
