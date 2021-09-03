@@ -21,27 +21,35 @@
       class="
         md:px-32 md:py-5
         px-10
-        bg-white bg-opacity-40
+        bg-white bg-opacity-75
         w-full
-        h-24
+        md:h-24
+        h-auto
+        py-8
         flex
         md:flex-row
         flex-col
         justify-between
         items-center
         mb-16
+        fixed
+        top-0
+        z-10
       "
     >
       <div class="flex flex-1 md:mt-0 mt-5 md:mb-0 mb-5">
         <a href="#header">
-          <img src="./assets/img/logo.png" alt="logo" class="w-32" />
+          <img src="./assets/img/logo-ads.png" alt="logo" class="h-14" />
+        </a>
+        <a href="#header" class="ml-2">
+          <img src="./assets/img/logo.png" alt="logo" class="h-14" />
         </a>
       </div>
       <nav class="flex flex-row">
         <ul class="flex flex-row items-center gap-8">
           <li>
             <button class="cta-button">
-              <a href="#contact"> Get Quote </a>
+              <a href="#contact" class="text-lg"> Get Quote </a>
             </button>
           </li>
         </ul>
@@ -50,7 +58,7 @@
     <!-- End Header -->
 
     <!-- Hero -->
-    <section id="hero" class="flex justify-center mb-20">
+    <section id="hero" class="flex justify-center mb-20 md:mt-44 mt-48">
       <div class="container flex md:flex-row flex-col-reverse md:px-20 px-10">
         <div class="flex flex-col flex-1 md:w-5/12 w-full">
           <h1
@@ -298,17 +306,46 @@
 
     <!-- Contact -->
     <section id="contact" class="py-20">
-      <div class="flex flex-row justify-between items-center md:px-20 px-10">
-        <div class="flex flex-col w-1/2">
+      <div
+        class="
+          flex
+          md:flex-row
+          flex-col-reverse
+          justify-between
+          items-center
+          md:px-20
+          px-10
+        "
+      >
+        <div class="flex flex-col md:w-1/2 w-full">
           <div class="border-l-8 border-blue-900 px-10">
-            <h2 class="text-4xl font-semibold text-blue-900 capitalize mb-6">
+            <h2
+              class="
+                md:text-4xl
+                text-xl
+                font-semibold
+                text-blue-900
+                capitalize
+                mb-6
+              "
+            >
               Obtaining further information by make a contact with our
               experienced IT staffs.
             </h2>
             <p class="text-lg text-gray-400">We're available 8 hours a day</p>
           </div>
         </div>
-        <div class="flex flex-col w-1/2 px-10">
+        <div
+          class="
+            flex flex-col
+            md:w-1/2
+            w-full
+            md:pr-10
+            px-2
+            md:pl-16 md:mb-0
+            mb-8
+          "
+        >
           <h2 class="text-2xl font-semibold capitalize text-blue-900 mb-6">
             Contact Us
           </h2>
@@ -349,7 +386,7 @@
             "
           />
           <label class="text-lg text-gray-500 mb-2 ml-4" for="name"
-            >Your Massage</label
+            >Your Message</label
           >
           <textarea
             name="body"
@@ -367,7 +404,7 @@
             "
           ></textarea>
           <button class="cta-button">
-            <a href="#"> Send Massage </a>
+            <a href="#" class="text-lg"> Send Message </a>
           </button>
         </div>
       </div>
@@ -389,8 +426,9 @@
           px-8
         "
       >
-        <div>
-          <img src="./assets/img/logo.png" alt="logo" class="md:w-32 w-24" />
+        <div class="flex flex-row">
+          <img src="./assets/img/logo-ads.png" alt="logo" class="h-12" />
+          <img src="./assets/img/logo.png" alt="logo" class="ml-4 h-12" />
         </div>
         <div>
           <p></p>
