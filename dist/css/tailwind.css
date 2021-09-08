@@ -207,7 +207,8 @@ Correct the inability to style clickable types in iOS and Safari.
 */
 
 button,
-[type='button'] {
+[type='button'],
+[type='reset'] {
   -webkit-appearance: button;
 }
 
@@ -417,7 +418,8 @@ textarea::placeholder {
   color: #9ca3af;
 }
 
-button {
+button,
+[role="button"] {
   cursor: pointer;
 }
 
@@ -531,6 +533,10 @@ video {
  * Ensure the default browser behavior of the `hidden` attribute.
  */
 
+[hidden] {
+  display: none;
+}
+
 *, ::before, ::after {
   --tw-border-opacity: 1;
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
@@ -603,8 +609,20 @@ video {
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
 }
 
 .right-8 {
@@ -613,6 +631,10 @@ video {
 
 .bottom-10 {
   bottom: 2.5rem;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .float-right {
@@ -696,8 +718,12 @@ video {
   display: grid;
 }
 
-.h-10 {
-  height: 2.5rem;
+.contents {
+  display: contents;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-12 {
@@ -734,6 +760,17 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.transform {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @-webkit-keyframes spin {
@@ -802,12 +839,12 @@ video {
   }
 }
 
-.grid-rows-1 {
-  grid-template-rows: repeat(1, minmax(0, 1fr));
+.resize {
+  resize: both;
 }
 
-.flex-row {
-  flex-direction: row;
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1095,8 +1132,12 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.grayscale {
-  --tw-grayscale: grayscale(100%);
+.transition {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 #myBtn:hover {
@@ -1249,16 +1290,12 @@ video {
     margin-bottom: 3rem;
   }
 
-  .md\:h-14 {
-    height: 3.5rem;
+  .md\:ml-2 {
+    margin-left: 0.5rem;
   }
 
   .md\:h-24 {
     height: 6rem;
-  }
-
-  .md\:w-auto {
-    width: auto;
   }
 
   .md\:w-1\/2 {
