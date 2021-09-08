@@ -13,10 +13,8 @@
     />
     <link
       rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      href="./assets/vendor/owlcarousel/owl.carousel.css"
     />
-
     <link rel="stylesheet" href="./css/tailwind.css" />
     <title>IT Solutions</title>
   </head>
@@ -43,7 +41,7 @@
     >
       <div class="flex flex-1 md:mt-0 mt-5 md:mb-0 mb-5">
         <a href="https://adsmediamix.id/" target="_blank">
-          <img src="./assets/img/logo-ads.png" alt="logo" class="h-14" />
+          <img src="./assets/img/logo2.png" alt="logo" class="h-14" />
         </a>
         <a href="https://komunikamedia.co.id/" target="_blank" class="ml-2">
           <img src="./assets/img/logo.png" alt="logo" class="h-14" />
@@ -96,7 +94,6 @@
       </h2>
       <div
         class="
-          logo-slider
           container
           flex
           md:flex-row
@@ -107,60 +104,61 @@
           items-center
           md:space-y-0
           space-y-5
+          owl-carousel
         "
       >
         <div class="p-5 flex justify-center items-center filter grayscale">
           <img
-            class="m-auto md:w-auto md:h-14 h-10"
+            class="m-auto h-14"
             src="./assets/img/client/1_gojek.png"
             alt="client"
           />
         </div>
         <div class="p-5 flex justify-center items-center filter grayscale">
           <img
-            class="m-auto md:w-auto md:h-14 h-10"
+            class="m-auto h-14"
             src="./assets/img/client/2_pertamina.png"
             alt="client"
           />
         </div>
         <div class="p-5 flex justify-center items-center filter grayscale">
           <img
-            class="m-auto md:w-auto md:h-14 h-10"
+            class="m-auto h-14"
             src="./assets/img/client/3_Axiata.png"
             alt="client"
           />
         </div>
         <div class="p-5 flex justify-center items-center filter grayscale">
           <img
-            class="m-auto md:w-auto md:h-14 h-10"
+            class="m-auto h-14"
             src="./assets/img/client/4_telkomsel.png"
             alt="client"
           />
         </div>
         <div class="p-5 flex justify-center items-center filter grayscale">
           <img
-            class="m-auto md:w-auto md:h-14 h-10"
+            class="m-auto h-14"
             src="./assets/img/client/9_oppo.png"
             alt="client"
           />
         </div>
         <div class="p-5 flex justify-center items-center filter grayscale">
           <img
-            class="m-auto md:w-auto md:h-14 h-10"
+            class="m-auto h-14"
             src="./assets/img/client/10_maybank.png"
             alt="client"
           />
         </div>
         <div class="p-5 flex justify-center items-center filter grayscale">
           <img
-            class="m-auto md:w-auto md:h-14 h-10"
+            class="m-auto h-14"
             src="./assets/img/client/11_bri.png"
             alt="client"
           />
         </div>
         <div class="p-5 flex justify-center items-center filter grayscale">
           <img
-            class="m-auto md:w-auto md:h-14 h-10"
+            class="m-auto h-14"
             src="./assets/img/client/12_indofood.png"
             alt="client"
           />
@@ -484,11 +482,19 @@
           px-8
         "
       >
-        <div class="flex flex-row">
+        <div class="flex md:flex-row flex-col">
           <a href="https://adsmediamix.id/" target="_blank">
-            <img src="./assets/img/logo-ads.png" alt="logo" class="h-14" />
+            <img
+              src="./assets/img/logo2.png"
+              alt="logo"
+              class="h-14 md:mb-0 mb-4"
+            />
           </a>
-          <a href="https://komunikamedia.co.id/" target="_blank" class="ml-2">
+          <a
+            href="https://komunikamedia.co.id/"
+            target="_blank"
+            class="md:ml-2"
+          >
             <img src="./assets/img/logo.png" alt="logo" class="h-14" />
           </a>
         </div>
@@ -519,11 +525,17 @@
     >
       <i class="fas fa-arrow-up"></i>
     </button>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery-1.8.0.js"></script>
     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/vendor/owlcarousel/owl.carousel.js"></script>
+    <!-- <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+    ></script> -->
     <script src="./js/main.js"></script>
   </body>
 </html>
